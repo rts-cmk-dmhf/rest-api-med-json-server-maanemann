@@ -1,0 +1,10 @@
+{
+    "videos": [
+        {
+            "id": 1, "titel": "a-haunting-in-venice", "udgivelse": "2023", "vurdering": "6.8/10", "beskrivelse": "En mørkere og mere uhyggelig spin på Branaghs Poirot"
+        },
+        {
+            "id": 2, "titel": "Barbie", "udgivelse": "2023", "vurdering": "7.1/10", "beskrivelse": "En visuelt blændende komedie, hvis meta-humor er smart komplementeret af subversiv historiefortælling"
+        }
+    ]
+}
