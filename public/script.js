@@ -6,8 +6,16 @@ async function logMovies() {
     const response = await fetch("videos");
     const movies = await response.json();
     console.log(movies);
-    movies.forEach((element) => contentBox.innerHTML += element.titel + '<br>');
+    movies.forEach((element) =>
+        contentBox.innerHTML += element.titel + '<br>'
+    );
 }
+
+
+// Det her virker ikke :D :
+const remove = function () {
+    delete movies[0].titel;
+};
 
 logMovies()
 
