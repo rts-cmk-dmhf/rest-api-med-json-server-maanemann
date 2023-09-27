@@ -1,12 +1,12 @@
 
 const contentBox = document.querySelector("#content");
 
-// Starten af denne funktion er taget fra fetch dokumentation fra MDN
+// Denne funktion er stykket sammen af fetch og forEach dokumentation fra MDN, og min hukommelse
 async function logMovies() {
-  const response = await fetch("videos");
-  const movies = await response.json();
-  console.log(movies);
-  contentBox.innerHTML = movies[0].titel;
+    const response = await fetch("videos");
+    const movies = await response.json();
+    console.log(movies);
+    movies.forEach((element) => contentBox.innerHTML += element.titel + '<br>');
 }
 
 logMovies()
